@@ -1,5 +1,10 @@
-body,html{
+
+
+html{
     min-height:100%;
+    
+}
+body,html{
     width:100%;
     margin:0;
     z-index:auto;
@@ -12,14 +17,17 @@ body{
     flex-direction:column;
     z-index:0;
     min-width:1080px;
+    height:100%;
 }
 
+#container{
+    flex:0 1 100%;
+}
 
     
     #header{
-    flex:0 0;
+    flex:1 0 125px;
     width:100vw;
-    height:125px;
     background: linear-gradient(90deg, white 49.98%, black 50%);
     display:flex;
     flex-direction:column;
@@ -54,15 +62,16 @@ body{
 }
 
 #wrapper{
+    
 width:600px;
     height:400px;
     margin:50px auto 50px auto;
     
-    
+    padding-top:8px;
+    paddint-bottom:8px;
     mix-blend-mode: difference;
     z-index:1;
-    border-color:white;
-        
+        position:relative;
 }
 
 
@@ -88,6 +97,55 @@ width:600px;
     background-image:linear-gradient(90deg, white 49.8%, black 49.8%);
 border-radius:8px;
 }
+
+
+#subcontent{
+    
+    width: 900px;
+    
+    height:700px;
+    
+    margin:50px auto auto auto;
+    
+    display:flex;
+    
+    flex-direction:row;
+    
+    justify-content: space-evenly;
+        
+        flex-wrap: nowrap;
+}
+
+#fanarts,#noticias{
+    
+    width:350px;
+    height:700px;
+    
+
+    
+    
+}
+
+#fanarts{
+    
+    margin-right:100px;
+    
+
+    border-radius:15px;
+    
+    background-image: linear-gradient(180deg, white, #f4001f);
+}
+
+#noticias{
+    margin-left:100px;
+    
+    background-color:black;
+    
+    border-radius: 15px;
+    
+    background-image: linear-gradient(180deg, black, #d90c77);
+}
+
 
 /*
 #wrapper{
