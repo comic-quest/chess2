@@ -44,16 +44,21 @@ body{
     width:100%;
     mix-blend-mode: difference;
     color:white;
+     display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
 }
 
 #nav2{
     border-top:solid 5px white;
         flex: 1 0 50%;
+    
 }
 
 #nav1{
 
         flex: 0 1 50%;
+   
 }
 
 #content{
@@ -159,5 +164,31 @@ border-radius:8px;
 }
 */
 
+.navElement{
+    
+    height:75px;
+    
+    
+    
+    flex: 0 0.5 150px;
+    
+    background-color:white;
+    
+    border-radius:8px 5px 0 0;
+    
+    margin-top:10px;
+    
+}
 
+.navText{
+    color:black;
+    
+    font-size:40px;
+    
+    margin-top:10px;
+    
+    margin-bottom:auto;
+    
+    text-align:center;
+}
 
